@@ -140,11 +140,11 @@ pnpm run dev
             }}>
               <h4 style={{ color: "#0d47a1", marginBottom: "0.5rem" }}>Option 2: Deploy Your Own Instance</h4>
               <p style={{ color: "#1565c0", fontSize: "0.95rem", marginBottom: "0.5rem" }}>
-                Deploy your own instance to Vercel with environment variables:
+                Deploy your own instance to Vercel:
               </p>
-              <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", justifyContent: "center" }}>
+              <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", justifyContent: "center", marginBottom: "0.75rem" }}>
                 <a 
-                  href="https://vercel.com/new/clone?repository-url=https://github.com/stackblitz-labs/bolt.diy&env=OPENAI_API_KEY,ANTHROPIC_API_KEY,GOOGLE_GENERATIVE_AI_API_KEY,GROQ_API_KEY,XAI_API_KEY,PERPLEXITY_API_KEY,OPENROUTER_API_KEY"
+                  href="https://vercel.com/new/clone?repository-url=https://github.com/stackblitz-labs/bolt.diy"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ 
@@ -160,8 +160,8 @@ pnpm run dev
                   Deploy to Vercel →
                 </a>
               </div>
-              <p style={{ color: "#666", fontSize: "0.85rem", marginTop: "0.5rem", textAlign: "center" }}>
-                You'll need at least one LLM API key during deployment
+              <p style={{ color: "#d32f2f", fontSize: "0.85rem", marginTop: "0.5rem", textAlign: "center", background: "#ffebee", padding: "0.5rem", borderRadius: "4px" }}>
+                ⚠️ <strong>Important:</strong> You'll need to add at least ONE API key as an environment variable during deployment (e.g., OPENAI_API_KEY, GROQ_API_KEY, etc.). You can add more keys later in Vercel settings.
               </p>
             </div>
           </div>
