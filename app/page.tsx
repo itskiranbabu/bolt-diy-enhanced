@@ -1,119 +1,248 @@
 export const metadata = {
-  title: 'Bolt.DIY Enhanced - AI-Powered Full-Stack Web App Builder',
-  description: 'Build full-stack web applications using AI. Prompt, run, edit, and deploy with any LLM. Enhanced by itskiranbabu | Powered by KeyRun AI',
+  title: 'Bolt.DIY Enhanced - AI-Powered Full-Stack Web App Builder | by Kiran Babu',
+  description: 'Build full-stack web applications using AI. Prompt, run, edit, and deploy with 16+ LLM providers. Enhanced by Kiran Babu - AI Automation Engineer & Technical Scrum Master',
 }
 
 export default function HomePage() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
+    <div style={{ 
+      fontFamily: "system-ui, -apple-system, sans-serif", 
+      lineHeight: "1.8",
+      background: "linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%)",
+      minHeight: "100vh",
+      color: "#fff"
+    }}>
+      {/* Hero Section */}
       <div style={{ 
         maxWidth: "1200px", 
         margin: "0 auto", 
-        padding: "2rem",
-        minHeight: "100vh",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center"
+        padding: "4rem 2rem",
+        textAlign: "center"
       }}>
-        <div style={{ textAlign: "center", marginBottom: "3rem" }}>
+        <div style={{ marginBottom: "3rem" }}>
           <h1 style={{ 
-            fontSize: "3rem", 
-            fontWeight: "bold", 
+            fontSize: "3.5rem", 
+            fontWeight: "800", 
             marginBottom: "1rem",
-            background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+            background: "linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
-            backgroundClip: "text"
+            backgroundClip: "text",
+            letterSpacing: "-0.02em"
           }}>
             🚀 Bolt.DIY Enhanced
           </h1>
           <p style={{ 
-            fontSize: "1.5rem", 
-            color: "#666",
-            marginBottom: "2rem"
+            fontSize: "1.8rem", 
+            color: "#a0aec0",
+            marginBottom: "1rem",
+            fontWeight: "300"
           }}>
             AI-Powered Full-Stack Web Application Builder
           </p>
           <p style={{ 
-            fontSize: "1rem", 
-            color: "#888",
-            fontStyle: "italic"
-          }}>
-            Enhanced by <a href="https://github.com/itskiranbabu" style={{ color: "#667eea", textDecoration: "none" }}>itskiranbabu</a> | Powered by KeyRun AI
-          </p>
-        </div>
-
-        <div style={{ 
-          background: "#f8f9fa", 
-          padding: "2rem", 
-          borderRadius: "12px",
-          maxWidth: "800px",
-          width: "100%",
-          boxShadow: "0 4px 6px rgba(0,0,0,0.1)"
-        }}>
-          <h2 style={{ fontSize: "1.5rem", marginBottom: "1rem", color: "#333" }}>
-            ✨ Welcome to Bolt.DIY Enhanced!
-          </h2>
-          
-          <div style={{ marginBottom: "2rem" }}>
-            <h3 style={{ fontSize: "1.2rem", marginBottom: "0.5rem", color: "#555" }}>
-              🎯 What You Can Do:
-            </h3>
-            <ul style={{ color: "#666", paddingLeft: "1.5rem" }}>
-              <li><strong>Prompt</strong> - Describe your app in natural language</li>
-              <li><strong>Run</strong> - See your app running in real-time with WebContainer</li>
-              <li><strong>Edit</strong> - Modify code with AI assistance</li>
-              <li><strong>Deploy</strong> - One-click deployment to production</li>
-            </ul>
-          </div>
-
-          <div style={{ marginBottom: "2rem" }}>
-            <h3 style={{ fontSize: "1.2rem", marginBottom: "0.5rem", color: "#555" }}>
-              🤖 Supported LLMs (16+ Providers):
-            </h3>
-            <ul style={{ color: "#666", paddingLeft: "1.5rem" }}>
-              <li><strong>OpenAI</strong> - GPT-4, GPT-4 Turbo, GPT-4o, GPT-3.5</li>
-              <li><strong>Anthropic</strong> - Claude 3.5 Sonnet, Claude 3 Opus</li>
-              <li><strong>Google</strong> - Gemini 1.5 Pro, Gemini Flash, Gemini 2.0</li>
-              <li><strong>xAI Grok</strong> - Grok-1, Grok-2 🆕</li>
-              <li><strong>Groq</strong> - Llama 3, Llama 3.1, Mixtral, Gemma 🆕</li>
-              <li><strong>Perplexity</strong> - Sonar, Chat models 🆕</li>
-              <li><strong>OpenRouter</strong> - 100+ models from various providers 🆕</li>
-              <li><strong>Mistral AI</strong> - Mistral Large, Medium, Small</li>
-              <li><strong>Ollama</strong> - Local LLMs (Llama 3, CodeLlama, etc.)</li>
-              <li>And 7+ more providers!</li>
-            </ul>
-          </div>
-
-          <div style={{ 
-            background: "#e3f2fd", 
-            padding: "1.5rem", 
-            borderRadius: "8px",
-            border: "2px solid #2196f3",
+            fontSize: "1.1rem", 
+            color: "#718096",
+            fontStyle: "italic",
             marginBottom: "2rem"
           }}>
-            <h3 style={{ fontSize: "1.3rem", marginBottom: "1rem", color: "#0d47a1", textAlign: "center" }}>
-              🚀 Launch the Full Application
-            </h3>
-            <p style={{ color: "#1565c0", marginBottom: "1rem", textAlign: "center" }}>
-              To use the complete Bolt.DIY Enhanced application with AI code generation:
-            </p>
+            Enhanced by{" "}
+            <a 
+              href="https://itskiranbabu.github.io/kiranbabu-portfolio/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ 
+                color: "#667eea", 
+                textDecoration: "none",
+                borderBottom: "2px solid #667eea",
+                transition: "all 0.3s"
+              }}
+            >
+              Kiran Babu
+            </a>
+            {" "}| AI Automation Engineer & Technical Scrum Master
+          </p>
+          
+          {/* Stats */}
+          <div style={{ 
+            display: "flex", 
+            gap: "2rem", 
+            justifyContent: "center",
+            flexWrap: "wrap",
+            marginTop: "2rem"
+          }}>
+            <div style={{ textAlign: "center" }}>
+              <div style={{ fontSize: "2.5rem", fontWeight: "bold", color: "#667eea" }}>16+</div>
+              <div style={{ fontSize: "0.9rem", color: "#a0aec0" }}>LLM Providers</div>
+            </div>
+            <div style={{ textAlign: "center" }}>
+              <div style={{ fontSize: "2.5rem", fontWeight: "bold", color: "#764ba2" }}>100KB+</div>
+              <div style={{ fontSize: "0.9rem", color: "#a0aec0" }}>Documentation</div>
+            </div>
+            <div style={{ textAlign: "center" }}>
+              <div style={{ fontSize: "2.5rem", fontWeight: "bold", color: "#f093fb" }}>Open Source</div>
+              <div style={{ fontSize: "0.9rem", color: "#a0aec0" }}>MIT License</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Main Content */}
+        <div style={{ 
+          background: "rgba(255, 255, 255, 0.05)", 
+          backdropFilter: "blur(10px)",
+          padding: "3rem", 
+          borderRadius: "20px",
+          maxWidth: "900px",
+          margin: "0 auto",
+          boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
+          border: "1px solid rgba(255, 255, 255, 0.18)"
+        }}>
+          
+          {/* What You Can Do */}
+          <div style={{ marginBottom: "3rem", textAlign: "left" }}>
+            <h2 style={{ 
+              fontSize: "2rem", 
+              marginBottom: "1.5rem", 
+              color: "#fff",
+              borderLeft: "4px solid #667eea",
+              paddingLeft: "1rem"
+            }}>
+              🎯 What You Can Do
+            </h2>
+            <div style={{ 
+              display: "grid", 
+              gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+              gap: "1.5rem"
+            }}>
+              {[
+                { icon: "💬", title: "Prompt", desc: "Describe your app in natural language" },
+                { icon: "⚡", title: "Run", desc: "See it running in real-time" },
+                { icon: "✏️", title: "Edit", desc: "Modify code with AI assistance" },
+                { icon: "🚀", title: "Deploy", desc: "One-click to production" }
+              ].map((item, i) => (
+                <div key={i} style={{ 
+                  background: "rgba(255, 255, 255, 0.05)",
+                  padding: "1.5rem",
+                  borderRadius: "12px",
+                  border: "1px solid rgba(255, 255, 255, 0.1)",
+                  transition: "all 0.3s"
+                }}>
+                  <div style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>{item.icon}</div>
+                  <div style={{ fontSize: "1.1rem", fontWeight: "bold", marginBottom: "0.5rem", color: "#fff" }}>
+                    {item.title}
+                  </div>
+                  <div style={{ fontSize: "0.9rem", color: "#a0aec0" }}>{item.desc}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Supported LLMs */}
+          <div style={{ marginBottom: "3rem", textAlign: "left" }}>
+            <h2 style={{ 
+              fontSize: "2rem", 
+              marginBottom: "1.5rem", 
+              color: "#fff",
+              borderLeft: "4px solid #764ba2",
+              paddingLeft: "1rem"
+            }}>
+              🤖 Supported LLMs (16+ Providers)
+            </h2>
+            <div style={{ 
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+              gap: "1rem",
+              color: "#a0aec0"
+            }}>
+              {[
+                { name: "OpenAI", models: "GPT-4, GPT-4 Turbo, GPT-4o", new: false },
+                { name: "Anthropic", models: "Claude 3.5 Sonnet, Claude 3 Opus", new: false },
+                { name: "Google", models: "Gemini 1.5 Pro, Gemini 2.0", new: false },
+                { name: "xAI Grok", models: "Grok-1, Grok-2", new: true },
+                { name: "Groq", models: "Llama 3, Mixtral, Gemma", new: true },
+                { name: "Perplexity", models: "Sonar, Chat models", new: true },
+                { name: "OpenRouter", models: "100+ models", new: true },
+                { name: "Mistral AI", models: "Large, Medium, Small", new: false },
+                { name: "Ollama", models: "Local LLMs", new: false }
+              ].map((provider, i) => (
+                <div key={i} style={{ 
+                  background: "rgba(255, 255, 255, 0.05)",
+                  padding: "1rem",
+                  borderRadius: "8px",
+                  border: "1px solid rgba(255, 255, 255, 0.1)"
+                }}>
+                  <div style={{ 
+                    display: "flex", 
+                    alignItems: "center", 
+                    gap: "0.5rem",
+                    marginBottom: "0.5rem"
+                  }}>
+                    <strong style={{ color: "#fff" }}>{provider.name}</strong>
+                    {provider.new && (
+                      <span style={{ 
+                        background: "#667eea",
+                        color: "#fff",
+                        padding: "0.2rem 0.5rem",
+                        borderRadius: "4px",
+                        fontSize: "0.7rem",
+                        fontWeight: "bold"
+                      }}>NEW</span>
+                    )}
+                  </div>
+                  <div style={{ fontSize: "0.85rem" }}>{provider.models}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Deployment Options */}
+          <div style={{ 
+            background: "linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%)", 
+            padding: "2rem", 
+            borderRadius: "16px",
+            border: "2px solid rgba(102, 126, 234, 0.3)",
+            marginBottom: "3rem",
+            textAlign: "left"
+          }}>
+            <h2 style={{ 
+              fontSize: "2rem", 
+              marginBottom: "1.5rem", 
+              color: "#fff",
+              textAlign: "center"
+            }}>
+              🚀 How to Deploy Bolt.DIY
+            </h2>
             
             <div style={{ 
-              background: "white", 
-              padding: "1rem", 
-              borderRadius: "6px",
-              marginBottom: "1rem"
+              background: "rgba(255, 193, 7, 0.1)",
+              border: "2px solid rgba(255, 193, 7, 0.5)",
+              padding: "1rem",
+              borderRadius: "8px",
+              marginBottom: "2rem",
+              color: "#ffc107"
             }}>
-              <h4 style={{ color: "#0d47a1", marginBottom: "0.5rem" }}>Option 1: Run Locally (Recommended)</h4>
+              <strong>⚠️ Important:</strong> Bolt.DIY uses Remix + Cloudflare Workers and <strong>cannot be deployed to Vercel</strong>. Use Cloudflare Pages or run locally.
+            </div>
+
+            {/* Option 1: Local */}
+            <div style={{ 
+              background: "rgba(255, 255, 255, 0.05)",
+              padding: "1.5rem",
+              borderRadius: "12px",
+              marginBottom: "1.5rem",
+              border: "1px solid rgba(255, 255, 255, 0.1)"
+            }}>
+              <h3 style={{ color: "#667eea", marginBottom: "1rem", fontSize: "1.3rem" }}>
+                ⭐ Option 1: Run Locally (Recommended)
+              </h3>
               <pre style={{ 
-                background: "#263238", 
-                color: "#aed581", 
-                padding: "1rem", 
-                borderRadius: "4px",
+                background: "#1a1a2e", 
+                color: "#16f4d0", 
+                padding: "1.5rem", 
+                borderRadius: "8px",
                 overflow: "auto",
-                fontSize: "0.9rem"
+                fontSize: "0.9rem",
+                border: "1px solid rgba(22, 244, 208, 0.2)"
               }}>
 {`# Clone the repository
 git clone https://github.com/stackblitz-labs/bolt.diy.git
@@ -124,151 +253,195 @@ pnpm install
 
 # Add your API key
 cp .env.example .env.local
-# Edit .env.local and add your key
+# Edit .env.local and add at least ONE API key
 
 # Start the app
 pnpm run dev
 
 # Open http://localhost:5173`}
               </pre>
+              <div style={{ marginTop: "1rem", color: "#a0aec0", fontSize: "0.9rem" }}>
+                ✅ Works perfectly • ✅ Free (except API costs) • ✅ Full control
+              </div>
             </div>
 
+            {/* Option 2: Cloudflare */}
             <div style={{ 
-              background: "white", 
-              padding: "1rem", 
-              borderRadius: "6px"
+              background: "rgba(255, 255, 255, 0.05)",
+              padding: "1.5rem",
+              borderRadius: "12px",
+              border: "1px solid rgba(255, 255, 255, 0.1)"
             }}>
-              <h4 style={{ color: "#0d47a1", marginBottom: "0.5rem" }}>Option 2: Deploy Your Own Instance</h4>
-              <p style={{ color: "#1565c0", fontSize: "0.95rem", marginBottom: "0.5rem" }}>
-                Deploy your own instance to Vercel:
-              </p>
-              <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", justifyContent: "center", marginBottom: "0.75rem" }}>
+              <h3 style={{ color: "#764ba2", marginBottom: "1rem", fontSize: "1.3rem" }}>
+                ☁️ Option 2: Deploy to Cloudflare Pages
+              </h3>
+              <ol style={{ color: "#a0aec0", paddingLeft: "1.5rem", lineHeight: "2" }}>
+                <li>Fork the <a href="https://github.com/stackblitz-labs/bolt.diy" target="_blank" style={{ color: "#667eea" }}>bolt.diy repository</a></li>
+                <li>Go to <a href="https://dash.cloudflare.com/" target="_blank" style={{ color: "#667eea" }}>Cloudflare Pages</a></li>
+                <li>Connect your forked repository</li>
+                <li>Add environment variables (at least ONE API key)</li>
+                <li>Deploy!</li>
+              </ol>
+              <div style={{ marginTop: "1rem", color: "#a0aec0", fontSize: "0.9rem" }}>
+                ✅ Production-ready • ✅ Global CDN • ✅ Free tier available
+              </div>
+            </div>
+          </div>
+
+          {/* API Keys */}
+          <div style={{ marginBottom: "3rem", textAlign: "left" }}>
+            <h2 style={{ 
+              fontSize: "2rem", 
+              marginBottom: "1.5rem", 
+              color: "#fff",
+              borderLeft: "4px solid #f093fb",
+              paddingLeft: "1rem"
+            }}>
+              🔑 Get Your API Keys
+            </h2>
+            <div style={{ 
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+              gap: "1rem"
+            }}>
+              {[
+                { name: "OpenAI", url: "https://platform.openai.com/api-keys", note: "GPT-4, GPT-4o" },
+                { name: "Groq", url: "https://console.groq.com/", note: "Fast & Free!" },
+                { name: "Anthropic", url: "https://console.anthropic.com/", note: "Claude 3.5" },
+                { name: "Google", url: "https://makersuite.google.com/app/apikey", note: "Gemini Pro" },
+                { name: "Perplexity", url: "https://www.perplexity.ai/settings/api", note: "Search AI" },
+                { name: "OpenRouter", url: "https://openrouter.ai/keys", note: "100+ models" }
+              ].map((provider, i) => (
+                <a
+                  key={i}
+                  href={provider.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ 
+                    background: "rgba(255, 255, 255, 0.05)",
+                    padding: "1rem",
+                    borderRadius: "8px",
+                    border: "1px solid rgba(255, 255, 255, 0.1)",
+                    textDecoration: "none",
+                    color: "#fff",
+                    transition: "all 0.3s",
+                    display: "block"
+                  }}
+                >
+                  <div style={{ fontWeight: "bold", marginBottom: "0.5rem" }}>{provider.name}</div>
+                  <div style={{ fontSize: "0.85rem", color: "#a0aec0" }}>{provider.note}</div>
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Documentation */}
+          <div style={{ marginBottom: "3rem", textAlign: "left" }}>
+            <h2 style={{ 
+              fontSize: "2rem", 
+              marginBottom: "1.5rem", 
+              color: "#fff",
+              borderLeft: "4px solid #667eea",
+              paddingLeft: "1rem"
+            }}>
+              📚 Documentation & Guides
+            </h2>
+            <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
+              {[
+                { title: "⚡ Quick Start", url: "https://github.com/itskiranbabu/bolt-diy-enhanced/blob/main/QUICK_START.md", color: "#667eea" },
+                { title: "🚀 Deployment Guide", url: "https://github.com/itskiranbabu/bolt-diy-enhanced/blob/main/DEPLOYMENT_OPTIONS.md", color: "#764ba2" },
+                { title: "📖 Full Documentation", url: "https://github.com/itskiranbabu/bolt-diy-enhanced", color: "#f093fb" }
+              ].map((doc, i) => (
                 <a 
-                  href="https://vercel.com/new/clone?repository-url=https://github.com/stackblitz-labs/bolt.diy"
+                  key={i}
+                  href={doc.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ 
                     padding: "0.75rem 1.5rem", 
-                    background: "#000", 
+                    background: doc.color, 
                     color: "white", 
                     textDecoration: "none", 
-                    borderRadius: "6px",
+                    borderRadius: "8px",
                     display: "inline-block",
-                    fontWeight: "bold"
+                    fontWeight: "600",
+                    transition: "all 0.3s",
+                    border: "none"
                   }}
                 >
-                  Deploy to Vercel →
+                  {doc.title}
                 </a>
-              </div>
-              <p style={{ color: "#d32f2f", fontSize: "0.85rem", marginTop: "0.5rem", textAlign: "center", background: "#ffebee", padding: "0.5rem", borderRadius: "4px" }}>
-                ⚠️ <strong>Important:</strong> You'll need to add at least ONE API key as an environment variable during deployment (e.g., OPENAI_API_KEY, GROQ_API_KEY, etc.). You can add more keys later in Vercel settings.
-              </p>
+              ))}
             </div>
           </div>
 
+          {/* Getting Started */}
           <div style={{ 
-            background: "#fff3cd", 
-            padding: "1rem", 
-            borderRadius: "8px",
-            border: "1px solid #ffc107",
-            marginBottom: "2rem"
+            background: "rgba(102, 126, 234, 0.1)",
+            padding: "2rem",
+            borderRadius: "12px",
+            border: "1px solid rgba(102, 126, 234, 0.3)",
+            textAlign: "left"
           }}>
-            <h3 style={{ fontSize: "1.2rem", marginBottom: "0.5rem", color: "#856404" }}>
-              ⚠️ Why Not Hosted Here?
-            </h3>
-            <p style={{ color: "#856404", margin: 0, fontSize: "0.95rem" }}>
-              The full Bolt.DIY application requires your personal LLM API keys, WebContainer runtime, and serverless functions. For security and cost reasons, you should deploy your own instance with your API keys.
-            </p>
-          </div>
-
-          <div style={{ marginBottom: "2rem" }}>
-            <h3 style={{ fontSize: "1.2rem", marginBottom: "0.5rem", color: "#555" }}>
-              📚 Documentation & Guides:
-            </h3>
-            <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-              <a 
-                href="https://github.com/itskiranbabu/bolt-diy-enhanced/blob/main/QUICK_START.md" 
-                style={{ 
-                  padding: "0.5rem 1rem", 
-                  background: "#667eea", 
-                  color: "white", 
-                  textDecoration: "none", 
-                  borderRadius: "6px",
-                  display: "inline-block"
-                }}
-              >
-                ⚡ Quick Start Guide
-              </a>
-              <a 
-                href="https://github.com/itskiranbabu/bolt-diy-enhanced/blob/main/DEPLOY_FULL_APP.md" 
-                style={{ 
-                  padding: "0.5rem 1rem", 
-                  background: "#764ba2", 
-                  color: "white", 
-                  textDecoration: "none", 
-                  borderRadius: "6px",
-                  display: "inline-block"
-                }}
-              >
-                🚀 Deployment Guide
-              </a>
-              <a 
-                href="https://github.com/itskiranbabu/bolt-diy-enhanced" 
-                style={{ 
-                  padding: "0.5rem 1rem", 
-                  background: "#28a745", 
-                  color: "white", 
-                  textDecoration: "none", 
-                  borderRadius: "6px",
-                  display: "inline-block"
-                }}
-              >
-                📖 Full Documentation
-              </a>
-            </div>
-          </div>
-
-          <div style={{ 
-            background: "#e7f3ff", 
-            padding: "1rem", 
-            borderRadius: "8px",
-            border: "1px solid #2196f3"
-          }}>
-            <h3 style={{ fontSize: "1.2rem", marginBottom: "0.5rem", color: "#0d47a1" }}>
-              💡 Getting Started (3 Steps):
-            </h3>
-            <ol style={{ color: "#0d47a1", paddingLeft: "1.5rem", margin: 0 }}>
-              <li><strong>Get an API Key</strong> - Choose from OpenAI, Anthropic, Google, Groq, or others</li>
-              <li><strong>Clone & Install</strong> - Follow the commands above to run locally</li>
-              <li><strong>Start Building</strong> - Describe your app and watch AI build it!</li>
+            <h2 style={{ 
+              fontSize: "1.8rem", 
+              marginBottom: "1rem", 
+              color: "#fff"
+            }}>
+              💡 Getting Started (3 Steps)
+            </h2>
+            <ol style={{ color: "#a0aec0", paddingLeft: "1.5rem", lineHeight: "2", fontSize: "1.1rem" }}>
+              <li><strong style={{ color: "#fff" }}>Get an API Key</strong> - Choose from OpenAI, Groq, Anthropic, or others</li>
+              <li><strong style={{ color: "#fff" }}>Clone & Install</strong> - Follow the commands above to run locally</li>
+              <li><strong style={{ color: "#fff" }}>Start Building</strong> - Describe your app and watch AI build it!</li>
             </ol>
           </div>
         </div>
 
+        {/* Footer */}
         <div style={{ 
-          marginTop: "3rem", 
+          marginTop: "4rem", 
           textAlign: "center",
-          color: "#888"
+          color: "#718096",
+          paddingTop: "2rem",
+          borderTop: "1px solid rgba(255, 255, 255, 0.1)"
         }}>
-          <p style={{ marginBottom: "1rem" }}>
-            <strong>Original Project:</strong>{" "}
-            <a href="https://github.com/stackblitz-labs/bolt.diy" style={{ color: "#667eea" }}>
+          <p style={{ marginBottom: "1.5rem", fontSize: "1.1rem" }}>
+            <strong style={{ color: "#fff" }}>Original Project:</strong>{" "}
+            <a href="https://github.com/stackblitz-labs/bolt.diy" style={{ color: "#667eea", textDecoration: "none" }}>
               bolt.diy by StackBlitz Labs
             </a>
           </p>
-          <p style={{ marginTop: "1rem" }}>
-            <a href="https://github.com/itskiranbabu" style={{ color: "#667eea", marginRight: "1rem" }}>
+          
+          <div style={{ 
+            display: "flex", 
+            gap: "2rem", 
+            justifyContent: "center",
+            flexWrap: "wrap",
+            marginBottom: "1.5rem"
+          }}>
+            <a href="https://github.com/itskiranbabu" target="_blank" style={{ color: "#667eea", textDecoration: "none", fontSize: "1.1rem" }}>
               GitHub
             </a>
-            <a href="https://linkedin.com/in/itskiranbabu" style={{ color: "#667eea", marginRight: "1rem" }}>
+            <a href="https://linkedin.com/in/itskiranbabu" target="_blank" style={{ color: "#667eea", textDecoration: "none", fontSize: "1.1rem" }}>
               LinkedIn
             </a>
-            <a href="https://whatsapp.com/channel/0029VbCCj7FGJP8EeBLXzD1C" style={{ color: "#667eea" }}>
+            <a href="https://itskiranbabu.github.io/kiranbabu-portfolio/" target="_blank" style={{ color: "#667eea", textDecoration: "none", fontSize: "1.1rem" }}>
+              Portfolio
+            </a>
+            <a href="https://whatsapp.com/channel/0029VbCCj7FGJP8EeBLXzD1C" target="_blank" style={{ color: "#667eea", textDecoration: "none", fontSize: "1.1rem" }}>
               WhatsApp Community
             </a>
+          </div>
+          
+          <p style={{ fontSize: "1rem" }}>
+            ⭐ <a href="https://github.com/itskiranbabu/bolt-diy-enhanced" style={{ color: "#667eea", textDecoration: "none" }}>
+              Star the repo
+            </a> if you find it helpful!
           </p>
-          <p style={{ marginTop: "1rem", fontSize: "0.9rem" }}>
-            ⭐ <a href="https://github.com/itskiranbabu/bolt-diy-enhanced" style={{ color: "#667eea" }}>Star the repo</a> if you find it helpful!
+          
+          <p style={{ marginTop: "2rem", fontSize: "0.9rem", color: "#4a5568" }}>
+            Built with ❤️ by Kiran Babu | AI Automation Engineer & Technical Scrum Master
           </p>
         </div>
       </div>
