@@ -9,6 +9,9 @@ export default defineConfig({
         v3_relativeSplatPath: true,
         v3_throwAbortReason: true,
       },
+      // Explicitly disable Cloudflare mode
+      serverModuleFormat: "esm",
+      ignoredRouteFiles: ["**/.*"],
     }),
   ],
   server: {
@@ -16,5 +19,9 @@ export default defineConfig({
   },
   build: {
     target: "esnext",
+  },
+  // Disable Cloudflare-specific features
+  ssr: {
+    noExternal: true,
   },
 });
