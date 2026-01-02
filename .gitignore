@@ -1,0 +1,11 @@
+node_modules
+.cache
+build
+.env
+.env.local
+.env.production
+.vercel
+.netlify
+dist
+*.log
+.DS_Store
