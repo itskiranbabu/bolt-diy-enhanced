@@ -1,11 +1,34 @@
+# Dependencies
 node_modules
-.cache
+.pnpm-store
+
+# Next.js
+.next
+out
 build
+
+# Remix (old)
+/build
+/.cache
+
+# Environment
 .env
 .env.local
-.env.production
-.vercel
-.netlify
-dist
+.env*.local
+
+# Logs
 *.log
+npm-debug.log*
+
+# OS
 .DS_Store
+Thumbs.db
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# Vercel
+.vercel
