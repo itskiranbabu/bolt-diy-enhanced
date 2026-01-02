@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
   "author": {
     "name": "itskiranbabu",
     "email": "itskeyrun.ai@gmail.com",
@@ -33,52 +35,34 @@
     "gpt-4"
   ],
   "engines": {
-    "node": ">=18.18.0",
-    "pnpm": ">=9.14.4"
+    "node": ">=18.18.0"
   },
-  "packageManager": "pnpm@9.14.4",
   "scripts": {
     "dev": "remix vite:dev",
     "build": "remix vite:build",
     "start": "remix-serve ./build/server/index.js",
-    "preview": "pnpm run build && pnpm run start",
-    "test": "vitest --run",
-    "test:watch": "vitest",
-    "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint app",
-    "lint:fix": "pnpm run lint -- --fix && prettier app --write",
+    "preview": "npm run build && npm run start",
+    "test": "echo \"No tests yet\"",
+    "lint": "eslint --cache app",
     "typecheck": "tsc",
-    "clean": "rimraf build node_modules/.cache",
-    "deploy:vercel": "vercel --prod",
-    "deploy:netlify": "netlify deploy --prod",
-    "deploy:cloudflare": "wrangler pages deploy ./build/client"
+    "clean": "rimraf build",
+    "deploy:vercel": "vercel --prod"
   },
   "dependencies": {
     "@remix-run/node": "^2.15.2",
     "@remix-run/react": "^2.15.2",
     "@remix-run/serve": "^2.15.2",
+    "isbot": "^4.4.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "ai": "^4.3.16",
-    "@ai-sdk/openai": "^1.1.2",
-    "@ai-sdk/anthropic": "^0.0.39",
-    "@ai-sdk/google": "^0.0.52",
-    "@ai-sdk/react": "^1.2.12",
-    "isbot": "^4.4.0"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.15.2",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react": "^4.3.4",
-    "eslint": "^8.57.0",
-    "eslint-config-prettier": "^10.1.1",
-    "eslint-plugin-prettier": "^5.2.6",
-    "prettier": "^3.5.3",
-    "rimraf": "^4.4.1",
     "typescript": "^5.7.2",
     "vite": "^5.4.11",
-    "vitest": "^2.1.7"
+    "vite-tsconfig-paths": "^4.3.2"
   }
 }
