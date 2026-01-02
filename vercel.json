@@ -1,0 +1,15 @@
+# Vercel Configuration
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "build/client",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "remix",
+  "regions": ["iad1"],
+  "functions": {
+    "app/routes/**/*.{js,ts,jsx,tsx}": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  }
+}
