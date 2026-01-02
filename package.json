@@ -41,7 +41,6 @@
     "dev": "remix vite:dev",
     "build": "remix vite:build",
     "start": "remix-serve ./build/server/index.js",
-    "preview": "npm run build && npm run start",
     "typecheck": "tsc"
   },
   "dependencies": {
@@ -58,5 +57,13 @@
     "@types/react-dom": "^18.3.1",
     "typescript": "^5.7.2",
     "vite": "^5.4.11"
+  },
+  "overrides": {
+    "@cloudflare/workerd-linux-64": "npm:empty-module@1.0.0",
+    "@cloudflare/workerd-darwin-64": "npm:empty-module@1.0.0",
+    "@cloudflare/workerd-darwin-arm64": "npm:empty-module@1.0.0",
+    "@cloudflare/workerd-windows-64": "npm:empty-module@1.0.0",
+    "miniflare": "npm:empty-module@1.0.0",
+    "wrangler": "npm:empty-module@1.0.0"
   }
 }
