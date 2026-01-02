@@ -42,11 +42,7 @@
     "build": "remix vite:build",
     "start": "remix-serve ./build/server/index.js",
     "preview": "npm run build && npm run start",
-    "test": "echo \"No tests yet\"",
-    "lint": "eslint --cache app",
-    "typecheck": "tsc",
-    "clean": "rimraf build",
-    "deploy:vercel": "vercel --prod"
+    "typecheck": "tsc"
   },
   "dependencies": {
     "@remix-run/node": "^2.15.2",
@@ -60,9 +56,7 @@
     "@remix-run/dev": "^2.15.2",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
-    "@vitejs/plugin-react": "^4.3.4",
     "typescript": "^5.7.2",
-    "vite": "^5.4.11",
-    "vite-tsconfig-paths": "^4.3.2"
+    "vite": "^5.4.11"
   }
 }
