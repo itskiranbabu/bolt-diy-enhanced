@@ -68,10 +68,10 @@ export default function Index() {
               🎯 What You Can Do:
             </h3>
             <ul style={{ color: "#666", paddingLeft: "1.5rem" }}>
-              <li>Prompt - Describe your app in natural language</li>
-              <li>Run - See your app running in real-time</li>
-              <li>Edit - Modify code with AI assistance</li>
-              <li>Deploy - One-click deployment to production</li>
+              <li><strong>Prompt</strong> - Describe your app in natural language</li>
+              <li><strong>Run</strong> - See your app running in real-time with WebContainer</li>
+              <li><strong>Edit</strong> - Modify code with AI assistance</li>
+              <li><strong>Deploy</strong> - One-click deployment to production</li>
             </ul>
           </div>
 
@@ -80,12 +80,96 @@ export default function Index() {
               🤖 Supported LLMs:
             </h3>
             <ul style={{ color: "#666", paddingLeft: "1.5rem" }}>
-              <li>OpenAI (GPT-4, GPT-3.5)</li>
+              <li>OpenAI (GPT-4, GPT-4 Turbo, GPT-3.5)</li>
               <li>Anthropic (Claude 3.5 Sonnet, Claude 3 Opus)</li>
-              <li>Google (Gemini Pro, Gemini Flash)</li>
-              <li>Ollama (Local LLMs)</li>
+              <li>Google (Gemini 1.5 Pro, Gemini Flash)</li>
+              <li>Groq (Llama 3, Mixtral, Gemma)</li>
+              <li>Ollama (Local LLMs - Llama 3, CodeLlama, etc.)</li>
               <li>And 15+ more providers!</li>
             </ul>
+          </div>
+
+          <div style={{ 
+            background: "#e3f2fd", 
+            padding: "1.5rem", 
+            borderRadius: "8px",
+            border: "2px solid #2196f3",
+            marginBottom: "2rem"
+          }}>
+            <h3 style={{ fontSize: "1.3rem", marginBottom: "1rem", color: "#0d47a1", textAlign: "center" }}>
+              🚀 Launch the Full Application
+            </h3>
+            <p style={{ color: "#1565c0", marginBottom: "1rem", textAlign: "center" }}>
+              To use the complete Bolt.DIY Enhanced application with AI code generation:
+            </p>
+            
+            <div style={{ 
+              background: "white", 
+              padding: "1rem", 
+              borderRadius: "6px",
+              marginBottom: "1rem"
+            }}>
+              <h4 style={{ color: "#0d47a1", marginBottom: "0.5rem" }}>Option 1: Run Locally (Recommended)</h4>
+              <pre style={{ 
+                background: "#263238", 
+                color: "#aed581", 
+                padding: "1rem", 
+                borderRadius: "4px",
+                overflow: "auto",
+                fontSize: "0.9rem"
+              }}>
+{`# Clone the repository
+git clone https://github.com/itskiranbabu/bolt-diy-enhanced.git
+cd bolt-diy-enhanced
+
+# Install dependencies
+pnpm install
+
+# Copy environment file
+cp .env.example .env.local
+
+# Add your API key (OpenAI, Anthropic, or Google)
+# Edit .env.local and add:
+# OPENAI_API_KEY=your_key_here
+
+# Start the app
+pnpm run dev
+
+# Open http://localhost:5173`}
+              </pre>
+            </div>
+
+            <div style={{ 
+              background: "white", 
+              padding: "1rem", 
+              borderRadius: "6px"
+            }}>
+              <h4 style={{ color: "#0d47a1", marginBottom: "0.5rem" }}>Option 2: Deploy Your Own Instance</h4>
+              <p style={{ color: "#1565c0", fontSize: "0.95rem", marginBottom: "0.5rem" }}>
+                Deploy your own instance to Vercel with environment variables:
+              </p>
+              <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", justifyContent: "center" }}>
+                <a 
+                  href="https://vercel.com/new/clone?repository-url=https://github.com/stackblitz-labs/bolt.diy&env=OPENAI_API_KEY,ANTHROPIC_API_KEY,GOOGLE_GENERATIVE_AI_API_KEY"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ 
+                    padding: "0.75rem 1.5rem", 
+                    background: "#000", 
+                    color: "white", 
+                    textDecoration: "none", 
+                    borderRadius: "6px",
+                    display: "inline-block",
+                    fontWeight: "bold"
+                  }}
+                >
+                  Deploy to Vercel →
+                </a>
+              </div>
+              <p style={{ color: "#666", fontSize: "0.85rem", marginTop: "0.5rem", textAlign: "center" }}>
+                You'll need to add your LLM API keys during deployment
+              </p>
+            </div>
           </div>
 
           <div style={{ 
@@ -96,26 +180,29 @@ export default function Index() {
             marginBottom: "2rem"
           }}>
             <h3 style={{ fontSize: "1.2rem", marginBottom: "0.5rem", color: "#856404" }}>
-              ⚠️ Setup Required
+              ⚠️ Why Not Hosted Here?
             </h3>
-            <p style={{ color: "#856404", margin: 0 }}>
-              This is a placeholder page. To use the full Bolt.DIY Enhanced application:
+            <p style={{ color: "#856404", margin: 0, fontSize: "0.95rem" }}>
+              The full Bolt.DIY application requires:
             </p>
-            <ol style={{ color: "#856404", paddingLeft: "1.5rem", marginTop: "0.5rem" }}>
-              <li>Clone the repository locally</li>
-              <li>Install dependencies: <code>pnpm install</code></li>
-              <li>Configure environment variables (see .env.example)</li>
-              <li>Run development server: <code>pnpm run dev</code></li>
-            </ol>
+            <ul style={{ color: "#856404", paddingLeft: "1.5rem", marginTop: "0.5rem", fontSize: "0.95rem" }}>
+              <li><strong>LLM API Keys</strong> - Your personal OpenAI/Anthropic/Google keys</li>
+              <li><strong>WebContainer</strong> - Browser-based Node.js runtime</li>
+              <li><strong>Serverless Functions</strong> - For AI model interactions</li>
+              <li><strong>Environment Variables</strong> - Secure API key storage</li>
+            </ul>
+            <p style={{ color: "#856404", marginTop: "0.5rem", fontSize: "0.95rem" }}>
+              For security and cost reasons, you should deploy your own instance with your API keys.
+            </p>
           </div>
 
           <div style={{ marginBottom: "2rem" }}>
             <h3 style={{ fontSize: "1.2rem", marginBottom: "0.5rem", color: "#555" }}>
-              📚 Quick Links:
+              📚 Documentation & Guides:
             </h3>
             <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
               <a 
-                href="https://github.com/itskiranbabu/bolt-diy-enhanced" 
+                href="https://github.com/itskiranbabu/bolt-diy-enhanced/blob/main/QUICK_START.md" 
                 style={{ 
                   padding: "0.5rem 1rem", 
                   background: "#667eea", 
@@ -125,10 +212,10 @@ export default function Index() {
                   display: "inline-block"
                 }}
               >
-                📖 Documentation
+                ⚡ Quick Start Guide
               </a>
               <a 
-                href="https://github.com/itskiranbabu/bolt-diy-enhanced/blob/main/QUICK_START.md" 
+                href="https://github.com/itskiranbabu/bolt-diy-enhanced/blob/main/VERCEL_DEPLOYMENT.md" 
                 style={{ 
                   padding: "0.5rem 1rem", 
                   background: "#764ba2", 
@@ -138,10 +225,10 @@ export default function Index() {
                   display: "inline-block"
                 }}
               >
-                ⚡ Quick Start
+                🚀 Deployment Guide
               </a>
               <a 
-                href="https://github.com/itskiranbabu/bolt-diy-enhanced/blob/main/VERCEL_DEPLOYMENT.md" 
+                href="https://github.com/itskiranbabu/bolt-diy-enhanced" 
                 style={{ 
                   padding: "0.5rem 1rem", 
                   background: "#28a745", 
@@ -151,7 +238,7 @@ export default function Index() {
                   display: "inline-block"
                 }}
               >
-                🚀 Deploy Guide
+                📖 Full Documentation
               </a>
             </div>
           </div>
@@ -163,14 +250,47 @@ export default function Index() {
             border: "1px solid #2196f3"
           }}>
             <h3 style={{ fontSize: "1.2rem", marginBottom: "0.5rem", color: "#0d47a1" }}>
-              💡 Next Steps:
+              💡 Getting Started (3 Steps):
             </h3>
             <ol style={{ color: "#0d47a1", paddingLeft: "1.5rem", margin: 0 }}>
-              <li>Get an LLM API key (OpenAI, Anthropic, or Google)</li>
-              <li>Follow the <a href="https://github.com/itskiranbabu/bolt-diy-enhanced/blob/main/QUICK_START.md" style={{ color: "#2196f3" }}>Quick Start Guide</a></li>
-              <li>Build your first AI-generated app!</li>
+              <li><strong>Get an API Key</strong> - Sign up for <a href="https://platform.openai.com/api-keys" style={{ color: "#2196f3" }}>OpenAI</a>, <a href="https://console.anthropic.com/" style={{ color: "#2196f3" }}>Anthropic</a>, or <a href="https://makersuite.google.com/app/apikey" style={{ color: "#2196f3" }}>Google</a></li>
+              <li><strong>Clone & Install</strong> - Follow the commands above to run locally</li>
+              <li><strong>Start Building</strong> - Describe your app and watch AI build it!</li>
             </ol>
           </div>
+        </div>
+
+        <div style={{ 
+          marginTop: "3rem",
+          padding: "2rem",
+          background: "#f8f9fa",
+          borderRadius: "12px",
+          maxWidth: "800px",
+          width: "100%"
+        }}>
+          <h3 style={{ fontSize: "1.3rem", marginBottom: "1rem", color: "#333", textAlign: "center" }}>
+            🎥 See It In Action
+          </h3>
+          <div style={{ marginBottom: "1.5rem" }}>
+            <h4 style={{ fontSize: "1.1rem", color: "#555", marginBottom: "0.5rem" }}>Example Prompts to Try:</h4>
+            <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+              <div style={{ background: "white", padding: "0.75rem", borderRadius: "6px", border: "1px solid #ddd" }}>
+                <strong>💬</strong> "Create a todo app with React and Tailwind CSS"
+              </div>
+              <div style={{ background: "white", padding: "0.75rem", borderRadius: "6px", border: "1px solid #ddd" }}>
+                <strong>💬</strong> "Build a weather dashboard that shows current weather and 5-day forecast"
+              </div>
+              <div style={{ background: "white", padding: "0.75rem", borderRadius: "6px", border: "1px solid #ddd" }}>
+                <strong>💬</strong> "Make a calculator app with keyboard support and modern design"
+              </div>
+              <div style={{ background: "white", padding: "0.75rem", borderRadius: "6px", border: "1px solid #ddd" }}>
+                <strong>💬</strong> "Create a markdown editor with live preview"
+              </div>
+            </div>
+          </div>
+          <p style={{ color: "#666", textAlign: "center", fontSize: "0.95rem" }}>
+            The AI will generate the complete application with all files, dependencies, and styling!
+          </p>
         </div>
 
         <div style={{ 
@@ -178,7 +298,7 @@ export default function Index() {
           textAlign: "center",
           color: "#888"
         }}>
-          <p>
+          <p style={{ marginBottom: "1rem" }}>
             <strong>Original Project:</strong>{" "}
             <a href="https://github.com/stackblitz-labs/bolt.diy" style={{ color: "#667eea" }}>
               bolt.diy by StackBlitz Labs
@@ -196,7 +316,7 @@ export default function Index() {
             </a>
           </p>
           <p style={{ marginTop: "1rem", fontSize: "0.9rem" }}>
-            ⭐ Star the repo if you find it helpful!
+            ⭐ <a href="https://github.com/itskiranbabu/bolt-diy-enhanced" style={{ color: "#667eea" }}>Star the repo</a> if you find it helpful!
           </p>
         </div>
       </div>
