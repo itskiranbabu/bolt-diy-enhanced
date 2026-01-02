@@ -8,8 +8,8 @@ export default defineConfig({
         v3_fetcherPersist: true,
         v3_relativeSplatPath: true,
         v3_throwAbortReason: true,
+        v3_singleFetch: true,
       },
-      // Explicitly disable Cloudflare mode
       serverModuleFormat: "esm",
       ignoredRouteFiles: ["**/.*"],
     }),
@@ -19,9 +19,5 @@ export default defineConfig({
   },
   build: {
     target: "esnext",
-  },
-  // Disable Cloudflare-specific features
-  ssr: {
-    noExternal: true,
   },
 });
