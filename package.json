@@ -4,8 +4,6 @@
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
-  "type": "module",
-  "sideEffects": false,
   "author": {
     "name": "itskiranbabu",
     "email": "itskeyrun.ai@gmail.com",
@@ -15,55 +13,24 @@
     "type": "git",
     "url": "https://github.com/itskiranbabu/bolt-diy-enhanced.git"
   },
-  "bugs": {
-    "url": "https://github.com/itskiranbabu/bolt-diy-enhanced/issues"
-  },
-  "homepage": "https://github.com/itskiranbabu/bolt-diy-enhanced#readme",
-  "keywords": [
-    "ai",
-    "llm",
-    "web-development",
-    "code-generation",
-    "bolt",
-    "remix",
-    "react",
-    "typescript",
-    "vercel",
-    "openai",
-    "anthropic",
-    "claude",
-    "gpt-4"
-  ],
-  "engines": {
-    "node": ">=18.18.0"
-  },
   "scripts": {
-    "dev": "remix vite:dev",
-    "build": "remix vite:build",
-    "start": "remix-serve ./build/server/index.js",
-    "typecheck": "tsc"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
   },
   "dependencies": {
-    "@remix-run/node": "^2.14.0",
-    "@remix-run/react": "^2.14.0",
-    "@remix-run/serve": "^2.14.0",
-    "isbot": "^4.4.0",
+    "next": "^14.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@remix-run/dev": "^2.14.0",
+    "@types/node": "^20.0.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
-    "typescript": "^5.7.2",
-    "vite": "^5.4.11"
+    "typescript": "^5.7.2"
   },
-  "overrides": {
-    "@cloudflare/workerd-linux-64": "npm:empty-module@1.0.0",
-    "@cloudflare/workerd-darwin-64": "npm:empty-module@1.0.0",
-    "@cloudflare/workerd-darwin-arm64": "npm:empty-module@1.0.0",
-    "@cloudflare/workerd-windows-64": "npm:empty-module@1.0.0",
-    "miniflare": "npm:empty-module@1.0.0",
-    "wrangler": "npm:empty-module@1.0.0"
+  "engines": {
+    "node": ">=18.18.0"
   }
 }
